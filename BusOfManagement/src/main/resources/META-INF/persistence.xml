@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.btt_BusOfManagement_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.btt.pojo.Product</class>
+    <class>com.btt.pojo.Tag</class>
+    <class>com.btt.pojo.Category</class>
+    <class>com.btt.pojo.User</class>
+    <class>com.btt.pojo.ProdTag</class>
+    <class>com.btt.pojo.Comment</class>
+    <class>com.btt.pojo.Company</class>
+    <class>com.btt.pojo.Districts</class>
+    <class>com.btt.pojo.Employee</class>
+    <class>com.btt.pojo.Customer</class>
+    <class>com.btt.pojo.Provinces</class>
+    <class>com.btt.pojo.Route</class>
+    <class>com.btt.pojo.Trip</class>
+    <class>com.btt.pojo.Bill</class>
+    <class>com.btt.pojo.Review</class>
+    <class>com.btt.pojo.Bus</class>
+    <class>com.btt.pojo.Station</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/saledb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Admin@123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
